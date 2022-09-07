@@ -1,40 +1,17 @@
-<?php
-include connectdb.php;
-$sql = "SELECT * FROM topic";
-$result = mysqli_query($conn, $sql);
-$list = "";
-// while($row = mysqli_fetch_array($result)) {
-//     echo "hi";
-//     $list = $list."<li>{$row["title"]}</li>";
-//     }
-
-// function print_list() {
-//     $list = scandir("data");
-//     $i = 0;
-//     while ($i < count($list)) {
-//         if ($list[$i] != ".") {
-//             if ($list[$i] != "..") {
-//                 echo "<li><a href=\"index.php?id=$list[$i]\">$list[$i]</a><li>";
-//             }
-//         }
-//         $i = $i + 1;
-//     }
-// }
+<?php 
+include_once "get_all_list.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>Document</title>
 </head>
 <body>
-    <h1>Home</h1>
+    <h1>Simple Board</h1>
+    <a href="create.php">Create Article</a>
     <ul>
         <?=$list?>
-//         <?php 
-//         print_list()
-//      ?>
     </ul>
-    
 </body>
 </html>
