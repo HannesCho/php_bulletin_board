@@ -3,8 +3,7 @@ include connectdb.php;
 $sql = "SELECT * FROM topic";
 $result = mysqli_query($conn, $sql);
 $list = "";
-$row = mysqli_fetch_array($result);
-while() {
+while($row = mysqli_fetch_array($result)) {
     echo "hi";
     $list = $list."<li>{$row["title"]}</li>";
     }
