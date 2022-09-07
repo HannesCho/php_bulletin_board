@@ -3,10 +3,10 @@ include connectdb.php;
 $sql = "SELECT * FROM topic";
 $result = mysqli_query($conn, $sql);
 $list = "";
-while($row = mysqli_fetch_array($result)) {
-    echo "hi";
-    $list = $list."<li>{$row["title"]}</li>";
-    }
+// while($row = mysqli_fetch_array($result)) {
+//     echo "hi";
+//     $list = $list."<li>{$row["title"]}</li>";
+//     }
 
 // function print_list() {
 //     $list = scandir("data");
