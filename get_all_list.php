@@ -5,6 +5,7 @@ $sql = "SELECT * FROM ".$table_name;
 $result = mysqli_query($conn, $sql);
 $list = "";
 while($row = mysqli_fetch_array($result)) {
-    $list = $list."<li><a href=\"article.php?id={$row["id"]}\">{$row["title"]}</a></li>";
+    $escaped_title = htmlspecialchars($row["title"]);
+    $list = $list."<li><a href=\"article.php?id={$row["id"]}\">{$escaped_title}</a></li>";
     }
 ?>
