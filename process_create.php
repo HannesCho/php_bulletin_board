@@ -23,6 +23,6 @@ try {
     }
 }
 catch(Exception $e) {
-    echo $e;
+    var_dump($e);
 }
 ?>
