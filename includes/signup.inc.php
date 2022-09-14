@@ -9,7 +9,7 @@ if(isset($_POST["submit"])) {
     $pwdRepeat = $_POST["pwdrepeat"];
 
     require_once "../database/connectdb.php";
-    require_once "../functions.inc.php";
+    require_once "functions.inc.php";
 
     if (emptyInputSignup($name,$email,$username,$pwd,$pwdRepeat) !== false) {
         header("location: ../pages/signup.php?error=emptyinput");
@@ -33,9 +33,12 @@ if(isset($_POST["submit"])) {
     }
 
     // here no error
+    createUser($conn, $name,$email,$username,$pwd);
 
 }
 else {
     header("location: ../signup.php");
     exit();
 }
+
+?>
