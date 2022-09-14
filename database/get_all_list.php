@@ -6,6 +6,6 @@ $result = mysqli_query($conn, $sql);
 $list = "";
 while($row = mysqli_fetch_array($result)) {
     $escaped_title = htmlspecialchars($row["title"]);
-    $list = $list."<li><a href=\"article.php?id={$row["id"]}\">{$escaped_title}</a></li>";
+    $list = $list."<li><a href=\"pages/article.php?id={$row["id"]}\">{$escaped_title}</a></li>";
     }
 ?>

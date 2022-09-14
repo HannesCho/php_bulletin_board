@@ -1,5 +1,5 @@
 <?php 
-include_once "get_all_list.php";
+include_once "database/get_all_list.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,7 +9,7 @@ include_once "get_all_list.php";
 </head>
 <body>
     <h1>Simple Board</h1>
-    <a href="create.php">Create Article</a>
+    <a href="pages/create.php">Create Article</a>
     <ul>
         <?=$list?>
     </ul>

@@ -1,5 +1,5 @@
 <?php
-include_once "connectdb.php";
+include_once "../database/connectdb.php";
 try {
     $table_name = "php_board.topic";
     settype($_POST['id'], 'integer');
@@ -22,7 +22,7 @@ try {
         echo "Failed!, Somethings Wrong!";
     } else {
         echo "You successfully update new article!";
-        echo "<p><a href='index.php'>Go back to Home</a></p>";
+        echo "<p><a href='../index.php'>Go back to Home</a></p>";
     }
 }
 catch(Exception $e) {
