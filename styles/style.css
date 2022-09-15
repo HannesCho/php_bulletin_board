@@ -1,3 +1,36 @@
+header {
+  background-color: aquamarine;
+}
+header a {
+  text-decoration: none;
+}
+header ul {
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header ul .nav-left li {
+  margin-left: 10px;
+}
+header ul .nav-right {
+  display: flex;
+  align-items: center;
+}
+header ul .nav-right li {
+  margin-right: 10px;
+}
+header .nav-link {
+  font-size: small;
+  color: black;
+}
+header :hover {
+  color: gray;
+}
+header .home {
+  font-size: large;
+}
+
 *, *:before, *:after {
   box-sizing: border-box;
 }

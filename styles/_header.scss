@@ -1,0 +1,36 @@
+header {
+    background-color: aquamarine;
+    a {
+        text-decoration: none;
+    }
+    ul {
+        height: 45px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .nav-left {
+            li {
+                margin-left: 10px;
+            }
+        }
+        .nav-right {
+            display: flex;
+            align-items: center;
+            li {
+                margin-right: 10px;
+            };
+        }
+    }
+    
+    .nav-link {
+        font-size: small;
+        color:black;
+    }
+    :hover {
+        color:gray;
+    }
+    .home {
+        font-size: large;
+    }
+}
