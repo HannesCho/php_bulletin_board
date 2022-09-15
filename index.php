@@ -1,17 +1,10 @@
 <?php 
 include_once "database/get_all_list.php";
+include_once "pages/core/header.php";
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Simple Board</h1>
-    <a href="pages/create.php">Create Article</a>
-    <ul>
-        <?=$list?>
-    </ul>
-</body>
-</html>
+        <div class="index-wrapper">
+                <h1>Welcome to<br>the Avo Board!</h1>
+        </div>
+<?php 
+include_once "pages/core/footer.php";
+?>
